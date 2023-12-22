@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 4</title>
+</head>
+<body>
+    <h2>WAP to convert kilometer to meter</h2>
+    <p id="answer"></p>
+    <!--
+    <script>
+        let km=2;
+        let m;
+        m=km*1000;
+        document.getElementById("answer").innerHTML="The distance in meter is: "+m;
+    </script>
+    -->
+    <script>
+        //By taking user-input in JS
+        let km=Number(prompt("Enter a distance in kilometer"));//converting string to number
+        let m;
+        m=km*1000;
+        document.getElementById("answer").innerHTML="The distance in meter is: "+m;
+    </script>
+</body>
+</html>

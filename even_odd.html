@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 5</title>
+</head>
+<body>
+    <h2>WAP to check the number is even or odd</h2>
+    <p>Use of if-else statement</p>
+    <p id="answer"></p>
+    <script>
+        //By taking user-input in JS
+        let n=Number(prompt("Enter a number"));//converting string to number
+        if(n%2==0)
+        {
+            document.getElementById("answer").innerText="The number is even";
+        }
+        else
+        {
+            document.getElementById("answer").innerText="The number is odd";
+        }
+    </script>
+</body>
+</html>

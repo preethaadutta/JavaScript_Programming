@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 9</title>
+</head>
+<body>
+    <h2>WAP to print LCM of some numbers</h2>
+    <p>Use of for loop and if statement</p>
+    <p id="answer"></p>
+    <script>
+        //By taking user-input in JS
+        //converting string to number
+        let a=Number(prompt("Enter 1st number"));
+        let b=Number(prompt("Enter 2nd number"));
+        let lcm=0;
+        let max=0;
+        for(let i=1;i<=a && i<=b;i++)
+        {
+            if((a%i==0) && (b%i==0))
+            {
+                gcd=i;
+            }
+        }
+        lcm=(a*b)/gcd;
+        document.getElementById("answer").innerText="The LCM of the numbers is: "+lcm;
+    </script>
+</body>
+</html>

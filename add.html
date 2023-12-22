@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 2</title>
+</head>
+<body>
+    <h2>WAP to add two numbers</h2>
+    <p id="answer"></p>
+    <!--
+    <script>
+        //By taking normal input
+        let x=5;
+        let y=6;
+        let z=x+y;
+        document.getElementById("answer").innerHTML="The addition of two number is: "+z;
+    </script>
+    -->
+    <script>
+        //By taking user-input in JS
+        //let x=prompt("Enter a number");//by default it takes as a string
+        let x=Number(prompt("Enter a number"));//converting string to number
+        let y=Number(prompt("Enter a number"));
+        let z=x+y;
+        document.getElementById("answer").innerHTML="The addition of two number is: "+z;
+    </script>
+</body>
+</html>

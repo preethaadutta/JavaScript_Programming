@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 6</title>
+</head>
+<body>
+    <h2>WAP to find factorial of a number</h2>
+    <p>Use of for loop</p>
+    <p id="answer"></p>
+    <script>
+        //By taking user-input in JS
+        let n=Number(prompt("Enter a number"));//converting string to number
+        let factorial=1;
+        for(let i=1;i<=n;i++)
+        {
+            factorial=factorial*i;
+        }
+        document.getElementById("answer").innerText="The factorial of the number is: "+factorial;
+    </script>
+</body>
+</html>

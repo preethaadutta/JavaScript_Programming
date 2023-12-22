@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 3</title>
+</head>
+<body>
+    <h2>WAP to swap the values of two numbers</h2>
+    <p id="answer"></p>
+    <!--
+    <script>
+        //By taking normal input
+        let x=2;
+        let y=3;
+        let z;
+        z=x;
+        x=y;
+        y=z;
+        document.getElementById("answer").innerHTML="The value of x is: "+x;
+        document.write("The value of y is: "+y);
+    </script>
+    -->
+    <script>
+        //By taking user-input in JS
+        //let x=prompt("Enter a number");//by default it takes as a string
+        let x=Number(prompt("Enter value of x"));//converting string to number
+        let y=Number(prompt("Enter value of y"));
+        let z;
+        z=x;
+        x=y;
+        y=z;
+        document.getElementById("answer").innerHTML="The value of x is: "+x;
+        document.write("The value of y is: "+y);
+    </script>
+</body>
+</html>
