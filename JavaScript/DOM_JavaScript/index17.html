@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval() & setTimeout()</title>
+</head>
+<body>
+    <h1>setInterval() method</h1>
+    <p id="demo1"></p>
+    <button onclick="stopsetInterval()">Stop setInterval()</button>
+
+    <h1>setTimeout() method</h1>
+    <p id="demo2"></p>
+    <button onclick="stopsetTimeout()">Stop setTimeout()</button>
+    <script>
+        //setInterval() method
+        const a=setInterval(b,1000);
+        function b()
+        {
+            document.getElementById("demo1").innerHTML=document.getElementById("demo1").innerHTML+" Preethaa";
+        }
+        function stopsetInterval()
+        {
+            clearInterval(a);
+        }
+
+        //setTimeout() method
+        const c=setTimeout(d,10000);
+        function d()
+        {
+            document.getElementById("demo2").innerHTML=document.getElementById("demo2").innerHTML+" Preethaa Dutta";
+        }
+        function stopsetTimeout()
+        {
+            clearTimeout(c);
+        }
+    </script>
+</body>
+</html>

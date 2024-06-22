@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 12</title>
+</head>
+<body>
+    <h2>WAP to print the sum of all digits of a number</h2>
+    <p>JavaScript while loop</p>
+    <p id="answer"></p>
+    <script>
+        //By taking user-input in JS
+        let number=Number(prompt("Enter a number"));//converting string to number
+        let sum=0;
+        let temp=number;
+        while(temp>0)
+        {
+            let rem=temp%10;
+            sum=sum+rem;
+            temp=temp/10;
+        }
+        document.getElementById("answer").innerHTML="The sum of all digits of the number is: "+Math.floor(sum);
+        //Math.floor() method converts decimal value to whole number
+        //Math.round() method rounds up value to whole number
+    </script>
+</body>
+</html>

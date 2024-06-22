@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial2</title>
+</head>
+<body>
+    <h1>How to select elements/tags/objects in DOM</h1>
+    <p id="demo"></p>
+    <p class="para"></p>
+    <ul>
+        <li>List1</li>
+        <li>List2</li>
+        <li>List3</li>
+        <li>List4</li>
+    </ul>
+    <script>
+        /*document.getElementById("demo").innerText="This is for getElementById() method";*/
+        /*document.querySelector("p").innerText="This is for querySelector() method";*/
+        /*document.querySelector(".para").innerText="This is for querySelector() method";*/
+        /*document.querySelector("#demo").innerText="This is for querySelector() method";*/
+        /*
+        const nodeList=document.querySelectorAll("li");
+        for(let i=0;i<nodeList.length;i++)
+        {
+            nodeList[i].style.backgroundColor="red";
+        }
+        */
+        /*
+        const data=document.getElementsByClassName("para");
+        data[0].innerText="This is for getElementsByClassName() method";
+        */
+        const data=document.getElementsByTagName("p");
+        data[0].innerText="This is for getElementsByTagName() method";
+    </script>
+</body>
+</html>

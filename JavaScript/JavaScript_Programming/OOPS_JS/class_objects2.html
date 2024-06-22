@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming in JS</title>
+</head>
+<body>
+    <h2>JS class and objects</h2>
+    <p>More concepts about Class and objects</p>
+    <p id="answer"></p>
+    <script>
+        //creating class
+        class RailwayReservationForm
+        {
+            formFill(givename)//defining method
+            {
+                this.name = givename;
+            }
+            formSubmit()//defining method
+            {
+                alert(`The form of ${this.name} is submitted`);
+                //document.write(`The form of ${this.name} is submitted`);
+            }
+            formCancel()//defining method
+            {
+                alert(`The form of ${this.name} is cancelled`);
+                //document.write(`The form of ${this.name} is cancelled`);
+            }
+        }
+        //creating objects by taking normal input
+        const person1=new RailwayReservationForm();
+        const person2=new RailwayReservationForm();
+
+        //calling the methods and showing the result
+        person1.formFill("Ajoy");
+        person2.formFill("Bijoy");
+        person1.formSubmit();
+        person2.formSubmit();
+        person2.formCancel();
+    </script>
+</body>
+</html>

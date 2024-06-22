@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 14</title>
+</head>
+<body>
+    <h2>WAP to implement switch case</h2>
+    <p>JavaScript switch case</p>
+    <p id="answer"></p>
+    <script>
+        //By taking user-input in JS
+        let number1=Number(prompt("Enter a number"));//converting string to number
+        let number2=Number(prompt("Enter a number"));//converting string to number
+        let option=Number(prompt("Option 1: addition, Option 2: substraction, Option 3: multiplication"));
+        switch(option) 
+        {
+            case 1:
+                var result=number1+number2;
+                break;
+            case 2:
+                var result=number1-number2;
+                break;
+            case 3:
+                var result=number1*number2;
+                break;
+            default:
+                var result=0;
+                document.write("Invalid option");
+        }
+        document.getElementById("answer").innerHTML="The result is "+result;
+    </script>
+</body>
+</html>

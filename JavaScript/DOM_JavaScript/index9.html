@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial9</title>
+</head>
+<body>
+    <h1>Adding event listeners to tags/elements of HTML using JS</h1>
+    <button id="button1">Click1</button>
+    <p id="para1"></p>
+    <button id="button2">Alert()</button>
+    <br>
+    <br>
+    <button id="button3">Confirm()</button>
+    <br>
+    <br>
+    <button id="button4">Prompt()</button>
+    <div id="div1"></div>
+    <script>
+        //selecting tag/element
+        document.getElementById("button1").addEventListener("click",displayDate);
+        function displayDate()
+        {
+            document.getElementById("para1").innerHTML=Date();
+        }
+
+        //selecting tag/element
+        document.getElementById("button2").addEventListener("click",function()
+        {
+            alert("It is a demo alert message");//only ok option will come
+        });
+
+        //selecting tag/element
+        document.getElementById("button3").addEventListener("click",function()
+        {
+            confirm("Press any one option");//ok and cancel options will come
+        });
+
+        //selecting tag/element
+        document.getElementById("button4").addEventListener("click",function()
+        {
+            let greeting=prompt("Please enter your name","Preethaa Dutta");
+            if(greeting!=null)
+            {
+                document.getElementById("div1").innerHTML="Hello "+greeting+"! How are you?";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial6</title>
+</head>
+<body>
+    <h1>Adding and deleting tags/elements of HTML using JS</h1>
+    <div id="div1"></div>
+    <div id="div2">
+        <button onclick="demoFunction()">Click</button>
+    </div>
+    <script>
+        //defining p tag/element using JS
+        const para1=document.createElement("p");
+        //adding text into that p tag
+        para1.innerText="This is a paragraph created by JS.";
+        //adding tag/element into HTML using appendChild() method
+        document.body.appendChild(para1);
+        
+        //defining p tag/element using JS
+        const para2=document.createElement("p");
+        //adding text into that p tag
+        const para2text=document.createTextNode("This is a paragraph within div created by JS.");
+        para2.appendChild(para2text);
+        //adding tag/element into HTML using appendChild() method
+        document.getElementById("div1").appendChild(para2);
+
+        function demoFunction()
+        {
+            //defining p tag/element using JS
+            const para3=document.createElement("p");
+            //adding text into that p tag
+            const para3text=document.createTextNode("This is a paragraph within div created by JS.");
+            para3.appendChild(para2text);
+            //adding tag/element into HTML using appendChild() method
+            document.getElementById("div2").appendChild(para3);
+        }
+    </script>
+</body>
+</html>

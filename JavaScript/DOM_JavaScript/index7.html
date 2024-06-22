@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial7</title>
+</head>
+<body>
+    <h1>Removing tags/elements of HTML using JS</h1>
+    <ul id="list1">
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Juice</li>
+    </ul>
+    <ol id="list2">
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Juice</li>
+    </ol>
+    <button onclick="demoFunction()">Click</button>
+    <script>
+        //selecting tag/element
+        const firstlist=document.getElementById("list1");
+        //removing first element
+        firstlist.removeChild(firstlist.firstElementChild);
+
+        function demoFunction()
+        {
+            //selecting tag/element
+            const secondlist=document.getElementById("list2");
+            //removing first element
+            secondlist.removeChild(secondlist.firstElementChild);
+        }
+    </script>
+</body>
+</html>

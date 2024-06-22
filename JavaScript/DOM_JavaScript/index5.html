@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial5</title>
+</head>
+<body>
+    <h1>Adding and deleting tags/elements of HTML using JS</h1>
+    <script>
+        //defining p tag/element using JS
+        const para=document.createElement("p");
+        //adding text into that p tag
+        para.innerText="This is a paragraph created by JS.";
+        //adding tag/element into HTML using appendChild() method
+        document.body.appendChild(para);
+        /*
+        //changing value of the href property of HTML element/tag using JS
+        document.querySelector("a").href="https://github.com/";
+        //changing value of color property of HTML element/tag using JS
+        document.querySelector("p").style.color="red";
+        //adding an attribute to HTML element/tag using JS
+        document.querySelector("a").setAttribute("target","_blank");
+        */
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial8</title>
+</head>
+<body>
+    <h1>Replacing tags/elements of HTML using JS</h1>
+    <ul id="list1">
+        <li>Motorcycle</li>
+        <li>Aeroplane</li>
+        <li>Train</li>
+        <li>Car</li>
+    </ul>
+    <ol id="list2">
+        <li>Motorcycle</li>
+        <li>Aeroplane</li>
+        <li>Train</li>
+        <li>Car</li>
+    </ol>
+    <button onclick="demoFunction()">Click</button>
+    <script>
+        //selecting tag/element
+        const data1=document.getElementById("list1").children[1];
+        //console.log(data1);
+        //defining new data
+        const newdata1=document.createTextNode("Ship");
+        //replacing existing data
+        data1.replaceChild(newdata1,data1.childNodes[0]);
+
+        function demoFunction()
+        {
+            //selecting tag/element
+            const data2=document.getElementById("list2").children[0];
+            const newdata2=document.createTextNode("Ship");
+            data2.replaceChild(newdata2, data2.childNodes[0]);
+        }
+    </script>
+</body>
+</html>

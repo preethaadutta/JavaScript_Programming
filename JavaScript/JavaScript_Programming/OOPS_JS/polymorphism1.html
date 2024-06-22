@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming in JS</title>
+</head>
+<body>
+    <h2>JS polymorphism</h2>
+    <p>Method Overloading in JS</p>
+    <p id="answer"></p>
+    <script>
+        class Add//parent class
+        {
+            add(a,b)//defining method
+            {
+                let sum1=a+b;
+                document.write("Sum is: "+sum1);
+            }
+            /*
+            add(c,d,e)
+            {
+                let sum2=c+d+e;
+                document.write("Sum is: "+sum2);
+            }
+            */
+            /*
+            shout()//defining method
+            {
+                document.write("Animal is shouting");
+            }
+            */
+        }
+        //creating objects by taking normal input
+        const object1=new Add();
+        object1.add(2,3);
+        //object1.add(2,3,2);
+        /*
+        class Tiger extends Animal //child class
+        {
+            run()
+            {
+                document.write("Tiger is running");
+            }
+        }
+        //creating objects by taking normal input
+        const monkey1=new Animal();
+        const tiger1=new Tiger();
+
+        //calling the methods and showing the result
+        monkey1.run();
+        monkey1.shout();
+        tiger1.run();
+        tiger1.shout();
+        */
+    </script>
+</body>
+</html>

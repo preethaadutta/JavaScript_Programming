@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming in JS</title>
+</head>
+<body>
+    <h2>JS polymorphism</h2>
+    <p>Method Overriding in JS</p>
+    <p id="answer"></p>
+    <script>
+        class Animal//parent class
+        {
+            run()//defining method
+            {
+                document.write("Animal is running");
+            }
+            shout()//defining method
+            {
+                document.write("Animal is shouting");
+            }
+        }
+        class Tiger extends Animal //child class
+        {
+            run()
+            {
+                document.write("Tiger is running");
+            }
+        }
+        //creating objects by taking normal input
+        const monkey1=new Animal();
+        const tiger1=new Tiger();
+
+        //calling the methods and showing the result
+        monkey1.run();
+        monkey1.shout();
+        tiger1.run();
+        tiger1.shout();
+    </script>
+</body>
+</html>

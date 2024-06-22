@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Slider with JS</title>
+</head>
+<body>
+    <img name="slide" width="600" height="400" />
+    <script>
+        var i = 0; //Start Point
+        var images = []; //Images Array
+        var time = 3000; //Time Between Switch in milliseconds	 
+        //Image List
+        //images[0] = "http://lorempixel.com/400/200/animals";
+        //images[1] = "http://lorempixel.com/400/200/sports";
+        //images[2] = "http://lorempixel.com/400/200/food";
+        //images[3] = "http://lorempixel.com/400/200/people";
+        //Change Image
+        images[0]="i1.jpg";
+        images[1]="i2.jpg";
+        images[2]="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600";
+        images[3]="https://images.pexels.com/photos/913215/pexels-photo-913215.jpeg?auto=compress&cs=tinysrgb&w=600";
+        function changeImg()
+        {
+            document.slide.src = images[i];
+            //Check If Index Is Under Max
+	        if(i < images.length - 1)
+            {
+                //Add 1 to Index
+	            i++; 
+	        } 
+            else 
+            { 
+		        //Reset Back To O
+		        i = 0;
+	        }
+	        //Run function every x seconds
+            setTimeout("changeImg()", time);
+        }
+        //Run function when page loads
+        window.onload=changeImg;
+    </script>
+</body>
+</html>

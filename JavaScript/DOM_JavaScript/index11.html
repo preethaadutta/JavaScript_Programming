@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 11</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border: 2px solid rgb(5, 5, 141);
+            position: relative;
+        }
+        #animation{
+            animation: animate 8s 1;
+        }
+        @keyframes animate{
+            from{
+                left: 0px;
+            }
+            to{
+                left: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Doing animation only one time when mouse is over that element</h1>
+    <div></div>
+    <script>
+        document.querySelector("div").addEventListener("mouseover",demoFunction1);
+        function demoFunction1()
+        {
+            document.querySelector("div").id="animation";
+            //const element=document.getElementsByTagName('div');
+            //demo.setAttribute('id', 'animation');
+        }
+    </script>
+</body>
+</html>

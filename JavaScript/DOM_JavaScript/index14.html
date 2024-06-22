@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 14</title>
+    <style>
+        .dist{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(244, 120, 211);
+            border: 2px solid rgb(255, 0, 174);
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .animation{
+            animation: animate 8s 1;
+        }
+        @keyframes animate{
+            from{
+                left: 0px;
+            }
+            to{
+                left: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Repeating animation by mouse over on it</h1>
+    <div class="dist"></div>
+    <script>
+        const dist=document.querySelector('.dist');
+        document.querySelector('div').addEventListener('mouseover',()=>
+        {
+            dist.classList.remove('animation');
+            setTimeout(function()
+            {
+                dist.classList.add('animation');
+            },10);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial4</title>
+</head>
+<body>
+    <h1>Adding and removing HTML using JS</h1>
+    <p>ABC</p>
+    <a href="https://www.google.com/">Google</a>
+    <script>
+        //changing value of innerText property of HTML element/tag using JS
+        document.querySelector("p").innerText="DEF";
+        //changing value of the href property of HTML element/tag using JS
+        document.querySelector("a").href="https://github.com/";
+        //changing value of color property of HTML element/tag using JS
+        document.querySelector("p").style.color="red";
+        //adding an attribute to HTML element/tag using JS
+        document.querySelector("a").setAttribute("target","_blank");
+    </script>
+</body>
+</html>

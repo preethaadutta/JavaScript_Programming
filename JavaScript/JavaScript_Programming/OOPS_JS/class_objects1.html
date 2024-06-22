@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming in JS</title>
+</head>
+<body>
+    <h2>JS class and objects</h2>
+    <p>Class and objects</p>
+    <p id="answer"></p>
+    <script>
+        //creating class
+        class Student
+        {
+            constructor(givename,giveroll)//constructor
+            {
+                this.name=givename;
+                this.roll=giveroll;
+            }
+        }
+        //creating objects by taking normal input
+        const student1=new Student("Ajoy",1);
+        const student2=new Student("Bijoy",2);
+        //creating objects by taking user input
+        //const student1=new Student(prompt("Enter a name"),prompt("Enter roll"));
+
+        //printing the result
+        //console.log("The name of 1st student is: "+student1.name);
+        //console.log("The roll of 1st student is: "+student1.roll);
+        //document.write("The name of 1st student is: "+student1.name);
+        //document.write("The roll of 1st student is: "+student1.roll);
+        document.getElementById("answer").innerHTML="The name of 1st student is: "+student1.name;
+    </script>
+</body>
+</html>

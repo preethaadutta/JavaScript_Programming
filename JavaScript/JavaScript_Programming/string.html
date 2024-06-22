@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 10</title>
+</head>
+<body>
+    <h2>String in JS</h2>
+    <p>Pre-defined functions on String in JS</p>
+    <p id="answer"></p>
+    <script>
+        let string1="Hi Preethaa Dutta!";
+        let length1=string1.length;
+        document.write("The length of the string is: "+length1);
+        let some_part1=string1.slice(2,4);
+        document.write("Some part of the string is: "+some_part1);
+        let some_part2=string1.substring(2,4);
+        document.write("Some part of the string is: "+some_part2);
+        let some_part3=string1.substr(2,4);
+        document.write("Some part of the string is: "+some_part3);
+        let string2=string1.replace("Hi","Hello");
+        document.write("After replacing the string is: "+string2);
+        let string3=string1.toUpperCase();
+        document.write("Uppercase string: "+string3);
+        let string4=string1.toLowerCase();
+        document.write("Lowercase string: "+string4);
+        let string5=string3.concat(" ",string4);
+        document.write("Concatenation of two strings: "+string5);
+
+        let string6="     Hi, Preethaa!    ";
+        let string7=string6.trim();
+        document.write("After trimming: "+string7);
+
+        let string8="Preethaa";
+        let c=string8.charAt(0);
+        document.write("The part of the string is: "+c);
+
+        //converting string to array
+        let string9="P,r,e,e,t,h,a,a";
+        let array1=string9.split(",");
+        document.write("1st array is: "+array1[0]);
+        document.write("2nd array is: "+array1[1]);
+
+        //converting string to array
+        let string10="I am Preethaa";
+        let array2=string10.split(" ");
+        document.write("1st array is: "+array2[0]);
+        document.write("2nd array is: "+array2[1]);
+    </script>
+</body>
+</html>

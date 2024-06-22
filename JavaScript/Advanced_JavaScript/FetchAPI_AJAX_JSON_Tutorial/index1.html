@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API - Get/Call data from API</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h2>Fetch API, AJAX, JSON Tutorial</h2>
+    <!--
+        API - Application Programming interface
+        The fetch API provides an interface for fetching data from backend means server. It uses request or response objects.
+        The fetch() method is used to fetch data from backend means server. It uses request and response objects.
+        We request any API to give some data and it returns data in the form of response.
+        fetch() returns first promise
+
+        let promise=fetch(url,[options]);
+        when we don't specify options then it will give get request means the request which is used to get some data from API
+
+        status:200 means successful request means data got successfully
+        when we use promise that time there are multiple ways to return result from promises.
+        1) promise chaining: .then, .catch
+        2) using asynchronous function: async, await
+
+        By using API only we can get data without reloading the page
+
+
+
+        AJAX - Asynchronous JS & XML (Nowadays AJAX means API calls)
+        JSON - JavaScript Object Notation (Nowadays data are sent in JSON format)
+        json() method is asynchronous method which returns a second promise that resolves with the result of parsing the response body text as JSON. (Input is JSON, output is JS object)
+
+        Process of API call
+        1) requesting API to fetch some data
+        2) it returns response in the JSON format
+        3) converting JSON format to JS object using json() method
+    -->
+    <h1>Tell me a random joke Using promise chaining .then, .catch</h1>
+    <button>Get New Joke</button>
+    <p id="question"></p>
+    <p id="answer"></p>
+
+    <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 8</title>
+</head>
+<body>
+    <h2>WAP to print GCD or HCF of some numbers</h2>
+    <p>Use of for loop and if statement</p>
+    <p id="answer"></p>
+    <script>
+        //By taking user-input in JS
+        //converting string to number
+        let a=Number(prompt("Enter 1st number"));
+        let b=Number(prompt("Enter 2nd number"));
+        let gcd=0;
+        for(let i=1;i<=a && i<=b;i++)
+        {
+            if((a%i==0) && (b%i==0))
+            {
+                gcd=i;
+            }
+        }
+        document.getElementById("answer").innerText="The GCD or HCF of the numbers is: "+gcd;
+    </script>
+</body>
+</html>

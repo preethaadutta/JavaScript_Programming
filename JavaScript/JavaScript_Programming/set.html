@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Set</title>
+</head>
+<body>
+    <script>
+        const data=new Set();
+        data.add(1);
+        data.add(2);
+        data.add("Preethaa");
+        data.add(undefined);
+        console.log("Set is:",data);//{1, 2, 'Preethaa', undefined}
+
+        let a=data.size;
+        console.log(a);//4
+
+        data.delete(1);
+        console.log(data);//{2, 'Preethaa', undefined}
+
+        let b=data.has("Preethaa");
+        console.log(b);//true
+
+        /*
+        data.clear();
+        console.log(data);
+        */
+    </script>
+</body>
+</html>

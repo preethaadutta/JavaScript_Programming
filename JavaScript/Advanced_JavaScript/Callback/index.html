@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Function</title>
+</head>
+<body>
+
+    <script>
+        /*
+        //Asynchronous Programming
+        console.log("start");
+        //setTimeout with anonymous function
+        setTimeout(function()
+        {
+            console.log("I am Preethaa");
+        },3000);
+        console.log("end");
+        */
+
+        /*
+        //Asynchronous Programming
+        console.log("start");
+        //setTimeout with arrow function
+        setTimeout(()=>
+        {
+            console.log("I am Preethaa");
+        },3000);
+        console.log("end");
+        */
+
+        /*
+        //Callback Function
+        function sum(a,b)
+        {
+            console.log(a+b);
+        }
+        function calculator(a,b,callback)
+        {
+            callback(a,b);
+        }
+        calculator(1,2,sum);
+        */
+
+        /*
+        //Callback Function
+        function sum(a,b)
+        {
+            console.log(a+b);
+        }
+        function calculator(a,b,callback)
+        {
+            callback(a,b);
+        }
+        calculator(1,2,sum);
+        */
+
+        //Callback Function
+        /*
+        function sum(a,b)
+        {
+            console.log(a+b);
+        }
+        */
+        /*
+        function calculator(a,b,callback)
+        {
+            callback(a,b);
+        }
+        calculator(1,2,(a,b)=>
+        {
+            console.log(a+b);
+        });
+        */
+
+        //callback hell=nested callbacks
+        function getData(dataId,getnextData)
+        {
+            setTimeout(()=>
+            {
+                console.log("data",dataId);
+                if(getnextData)
+                {
+                    getnextData();
+                }
+            },2000);
+        }
+        getData(1,()=>
+        {
+            console.log("Getting data2...");
+            getData(2,()=>
+            {
+                console.log("Getting data3...");
+                getData(3,()=>
+                {
+                    console.log("Getting data4...");
+                    getData(4);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

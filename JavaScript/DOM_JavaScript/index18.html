@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>ABC</p>
+        <span>DEF</span>
+    </div>
+    <script>
+        console.log(document.body.firstChild);
+        console.log(document.body.lastChild);
+        console.log(document.body.childNodes);//it is a collection (nodelist)
+        console.log(document.body.childNodes);//converting collection to array
+
+        console.log(document.documentElement.parentNode);//document
+        console.log(document.documentElement.parentElement);//null
+        a=document.body.firstChild;
+        console.log(a.parentNode);
+        console.log(a.parentElement);
+    </script>
+</body>
+</html>

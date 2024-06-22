@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 7</title>
+</head>
+<body>
+    <h2>WAP to print fibonacci series upto certain range</h2>
+    <p>Use of for loop</p>
+    <!--<p id="answer"></p>-->
+    <script>
+        //By taking user-input in JS
+        //converting string to number
+        let range=Number(prompt("Enter how many number of the series you want to print"));
+        let a=0;
+        let b=1;
+        document.write(a+" ");
+        document.write(b+" ");
+        for(let i=1;i<=range-2;i++)
+        {
+            let c=a+b;
+            document.write(c+" ");
+            a=b;
+            b=c;
+        }
+    </script>
+</body>
+</html>
